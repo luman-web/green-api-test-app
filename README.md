@@ -39,6 +39,19 @@ npm test
 npm run build
 ```
 
+## Публикация на GitHub Pages
+
+Проект настроен на автоматическую публикацию через GitHub Actions. При каждом
+push в ветку `main` workflow запускает тесты, собирает приложение и публикует
+каталог `dist`.
+
+Один раз выберите в репозитории **Settings → Pages → Source → GitHub Actions**.
+После успешного workflow приложение будет доступно по адресу:
+
+`https://luman-web.github.io/green-api-test-app/`
+
+Для ручного повторного запуска откройте **Actions → Deploy to GitHub Pages → Run workflow**.
+
 ## Проверка полного сценария
 
 1. Авторизуйте WhatsApp-инстанс в личном кабинете GREEN-API по QR-коду.
